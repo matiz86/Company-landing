@@ -1,0 +1,188 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 20px;
+  min-width: 180px;
+  font-weight: 600;
+  font-size: 17px;
+  text-align: center;
+  color: var(--color-dark-grey);
+  background-color: var(--color-light);
+}
+
+
+.list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --color-light: #ffffff;
+  --color-grey: #838383;
+  --color-dark-grey: #1d1d1f;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 39px 0;
+  width: 100%;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.nav__link {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-light);
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  color: var(--color-light);
+}
+
+.header__search {
+  width: 24px;
+  height: 24px;
+  margin-right: 25px;
+}
+
+.header__search svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero {
+  height: 100vh;
+  min-height: 800px;
+  padding-top: calc(120px + 150px);
+  background-image: url('../img/hero-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 30px;
+  max-width: 936px;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 116px;
+  color: var(--color-light);
+}
+
+.hero__descr {
+  margin: 0;
+  margin-bottom: 50px;
+  max-width: 468px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-light);
+}
+
+.btn--light {
+  color: var(--color-dark-grey);
+  background-color: var(--color-light);
+}
